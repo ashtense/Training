@@ -70,7 +70,6 @@ public class AESDecrypter {
 			decryptedString = new String(decryptedTextBytes);
 		} catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException
 				| InvalidAlgorithmParameterException | IllegalBlockSizeException | BadPaddingException e) {
-			LOGGER.error("Exception occured during decryption. ", e);
 		}
 		return decryptedString;
 	}
@@ -84,7 +83,6 @@ public class AESDecrypter {
 			final SecretKey secretKey = factory.generateSecret(spec);
 			secretKeySpec = new SecretKeySpec(secretKey.getEncoded(), AESConstants.ENCRYPTION_ALGO);
 		} catch (final NoSuchAlgorithmException | InvalidKeySpecException e) {
-			LOGGER.error("Exception occured while generating decryption key. ", e);
 		}
 		return secretKeySpec;
 	}

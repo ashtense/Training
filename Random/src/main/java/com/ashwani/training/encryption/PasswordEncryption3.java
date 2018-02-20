@@ -1,4 +1,5 @@
 package com.ashwani.training.encryption;
+import org.bouncycastle.jce.provider.BouncyCastleProvider;
 import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
 
 public class PasswordEncryption3 {

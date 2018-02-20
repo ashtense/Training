@@ -29,6 +29,11 @@ import org.apache.commons.codec.binary.Base64;
  * @author solanka
  */
 public class AESEncrypter {
+	
+	public static void main(String[] args) {
+		AESEncrypter encrypter = new AESEncrypter();
+		System.out.println(encrypter.encryptText("HELLO"));
+	}
 
 	/**
 	 * <p>
@@ -67,7 +72,6 @@ public class AESEncrypter {
 			} catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException
 					| InvalidParameterSpecException | IllegalBlockSizeException | BadPaddingException
 					| UnsupportedEncodingException e) {
-				LOGGER.error("Exception occured during encryption/salting", e);
 			}
 		}
 		return cipherString;
@@ -98,7 +102,6 @@ public class AESEncrypter {
 			final byte[] secretKeyStream = secretKey.getEncoded();
 			secretKeySpec = new SecretKeySpec(secretKeyStream, AESConstants.ENCRYPTION_ALGO);
 		} catch (final NoSuchAlgorithmException | InvalidKeySpecException e) {
-			LOGGER.error("Exception occured while generating secretKey", e);
 		}
 		return secretKeySpec;
 	}
