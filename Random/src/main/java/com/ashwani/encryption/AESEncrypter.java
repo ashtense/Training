@@ -29,7 +29,7 @@ import org.apache.commons.codec.binary.Base64;
  * @author solanka
  */
 public class AESEncrypter {
-	
+
 	public static void main(String[] args) {
 		AESEncrypter encrypter = new AESEncrypter();
 		System.out.println(encrypter.encryptText("HELLO"));
@@ -72,6 +72,7 @@ public class AESEncrypter {
 			} catch (NoSuchAlgorithmException | NoSuchPaddingException | InvalidKeyException
 					| InvalidParameterSpecException | IllegalBlockSizeException | BadPaddingException
 					| UnsupportedEncodingException e) {
+				e.printStackTrace();
 			}
 		}
 		return cipherString;
@@ -102,6 +103,8 @@ public class AESEncrypter {
 			final byte[] secretKeyStream = secretKey.getEncoded();
 			secretKeySpec = new SecretKeySpec(secretKeyStream, AESConstants.ENCRYPTION_ALGO);
 		} catch (final NoSuchAlgorithmException | InvalidKeySpecException e) {
+			System.err.println("Error occured while generating secret key specs");
+			e.printStackTrace();
 		}
 		return secretKeySpec;
 	}

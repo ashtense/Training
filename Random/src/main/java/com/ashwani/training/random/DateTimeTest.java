@@ -5,6 +5,7 @@
 package com.ashwani.training.random;
 
 import java.time.OffsetDateTime;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeFormatterBuilder;
 
@@ -18,9 +19,30 @@ public class DateTimeTest {
 		System.out.println(dateTime.format(customFormat));
 		// yyyy-MM-dd'T'hh:mm:ss.SSSZ
 
-		final DateTimeFormatter timeFormatter = new DateTimeFormatterBuilder().appendPattern("yyyy-MM-dd")
+		final DateTimeFormatter dateOnlyFormat = new DateTimeFormatterBuilder().appendPattern("yyyy-MM-dd")
 				.toFormatter();
-		System.err.println(dateTime.format(timeFormatter));
+		System.err.println("Date format" + dateTime.format(dateOnlyFormat));
+
+		final DateTimeFormatter timeOnlyFormat = new DateTimeFormatterBuilder().appendPattern("HH:mm:ss").toFormatter();
+		System.err.println("Time only format" + dateTime.format(timeOnlyFormat));
+
+		/*
+		 * ZonedDateTime zdi = ZonedDateTime.now(); String timeCapsule = zdi.getHour() +
+		 * ":" + zdi.getMinute(); System.err.println(zdi.getHour() + ":" +
+		 * zdi.getMinute());
+		 *
+		 * DateTimeFormatter fmt = new
+		 * DateTimeFormatterBuilder().appendPattern("HH:m").toFormatter();
+		 *
+		 * ZonedDateTime incoming = ZonedDateTime.parse(timeCapsule, fmt);
+		 * System.out.println("Geronimo" + incoming.toString());
+		 */
+
+		// 2018-02-08T13:15:56.326Z
+		ZonedDateTime zdiNew = ZonedDateTime.now();
+		final DateTimeFormatter customFormatForDas = new DateTimeFormatterBuilder()
+				.appendPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'").toFormatter();
+		System.err.println("LOL: " + zdiNew.format(customFormatForDas));
 	}
 
 }

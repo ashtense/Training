@@ -1,15 +1,11 @@
 package com.ashwani.training.encryption;
+
 import org.jasypt.encryption.pbe.StandardPBEStringEncryptor;
-import org.jasypt.registry.AlgorithmRegistry;
 import org.jasypt.util.text.BasicTextEncryptor;
 
 public class PasswordEncryption {
 
 	public static void main(String[] args) {
-		for (final Object object : AlgorithmRegistry.getAllPBEAlgorithms()) {
-			System.out.println(object.toString());
-		}
-
 		final String text = "SWYxewwK/WQcAq6OacEeyPFpdRtAlhrI";
 		final BasicTextEncryptor encrypter = new BasicTextEncryptor();
 		encrypter.setPassword("adpDbCryptKey#123");
