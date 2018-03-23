@@ -20,7 +20,7 @@ public class ValidatorFlow {
 	}
 
 	public static void main(String[] args) {
-		List<Predicate<Activity>> lstValidators = new ArrayList<>();
+		final List<Predicate<Activity>> lstValidators = new ArrayList<>();
 		addValidators(activity1, lstValidators);
 		lstValidators.forEach(validator -> {
 			System.out.println(validator.test(activity1));
@@ -31,6 +31,8 @@ public class ValidatorFlow {
 		lstValidators.forEach(validator -> {
 			System.out.println(validator.test(activity2));
 		});
+
+		System.err.println("Memory usage: " + (Runtime.getRuntime().totalMemory() - Runtime.getRuntime().freeMemory()));
 	}
 
 	private static void addValidators(Activity incomingActivity, List<Predicate<Activity>> lstValidators) {
