@@ -1,0 +1,22 @@
+{
+  "configObject": [
+    {
+      "property1": {
+        "isLocked": true,
+        "isAuditable": false
+      }
+    },
+    {
+      "property2": {
+        "isLocked": true,
+        "isAuditable": false
+      }
+    },
+    {
+      "property3": {
+        "isLocked": false,
+        "isAuditable": true
+      }
+    }
+  ]
+}
