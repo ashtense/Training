@@ -32,7 +32,7 @@ public class AESEncrypter {
 
 	public static void main(String[] args) {
 		AESEncrypter encrypter = new AESEncrypter();
-		System.out.println(encrypter.encryptText("HELLO"));
+		System.out.println(encrypter.encryptText("guest"));
 	}
 
 	/**

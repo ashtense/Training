@@ -28,6 +28,10 @@ public class LinkedList {
 		}
 	}
 
+	public Node popNode(final Node nodeToPop) {
+		return null;
+	}
+	
 	static class Node {
 		private int value;
 		private Node nextNode;
@@ -48,5 +52,5 @@ public class LinkedList {
 			return this.value;
 		}
 	}
-
+	
 }

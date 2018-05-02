@@ -86,5 +86,10 @@ public class AESDecrypter {
 		}
 		return secretKeySpec;
 	}
+	
+	public static void main(String[] args) {
+		AESDecrypter decrypter = new AESDecrypter();
+		System.out.println(decrypter.decryptText("FOxzHR6VTR9qjSXyoVBkzvkXMGOpJyyD4Zi1lLNV0tKkt60YUoCxFKqD9feptKYCP50JUA=="));
+	}
 
 }
