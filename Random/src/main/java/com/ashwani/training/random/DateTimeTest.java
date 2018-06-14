@@ -14,9 +14,10 @@ public class DateTimeTest {
 	public static void main(final String[] args) {
 		final OffsetDateTime dateTime = OffsetDateTime.parse("2015-11-02T00:08:23.205-08:00");
 
-		final DateTimeFormatter customFormat = new DateTimeFormatterBuilder()
-				.appendPattern("yyyy-MM-dd'T'HH:mm:ss.SSSXXX").toFormatter();
-		System.out.println(dateTime.format(customFormat));
+		// final DateTimeFormatter customFormat = new
+		// DateTimeFormatterBuilder().appendPattern("yyyy-MM-dd'T'HH:mm:ss.SSSXXX").toFormatter();
+		final DateTimeFormatter customFormat = new DateTimeFormatterBuilder().appendPattern("yyyy-MM-dd").toFormatter();
+		System.out.println("LOL: " + dateTime.format(customFormat));
 		// yyyy-MM-dd'T'hh:mm:ss.SSSZ
 
 		final DateTimeFormatter dateOnlyFormat = new DateTimeFormatterBuilder().appendPattern("yyyy-MM-dd")
@@ -39,7 +40,7 @@ public class DateTimeTest {
 		 */
 
 		// 2018-02-08T13:15:56.326Z
-		ZonedDateTime zdiNew = ZonedDateTime.now();
+		final ZonedDateTime zdiNew = ZonedDateTime.now();
 		final DateTimeFormatter customFormatForDas = new DateTimeFormatterBuilder()
 				.appendPattern("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'").toFormatter();
 		System.err.println("LOL: " + zdiNew.format(customFormatForDas));

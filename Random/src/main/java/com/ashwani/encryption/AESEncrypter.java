@@ -31,7 +31,7 @@ import org.apache.commons.codec.binary.Base64;
 public class AESEncrypter {
 
 	public static void main(String[] args) {
-		AESEncrypter encrypter = new AESEncrypter();
+		final AESEncrypter encrypter = new AESEncrypter();
 		System.out.println(encrypter.encryptText("guest"));
 	}
 
