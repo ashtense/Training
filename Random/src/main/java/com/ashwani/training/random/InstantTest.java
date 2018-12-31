@@ -7,7 +7,7 @@ import java.time.temporal.ChronoUnit;
 
 public class InstantTest {
 
-	public static void main(String[] args) {
+	public static void main(final String[] args) {
 		final Instant currentInstant = Instant.now();
 
 		final LocalTime currentTime = LocalTime.now();
@@ -16,7 +16,7 @@ public class InstantTest {
 		final Instant plus = Instant.now().plus(Period.ofYears(100).getYears(), ChronoUnit.YEARS);
 		System.out.println("LOL: " + plus.toString());
 
-		Instant.now().plus(5 * 60L * 60L * 1000L);
+		// Instant.now().plus(5 * 60L * 60L * 1000L);
 
 	}
 }
