@@ -1,0 +1,16 @@
+
+Z
+java:S4143;"DVerify this is the key that was intended; it was already set before.(©’‚­
+S	java:S106"9Replace this use of System.out or System.err by a logger.(—ÿˆùÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(¹¦…‡úÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(—ÿˆùÿÿÿÿÿ
+S	java:S106"9Replace this use of System.out or System.err by a logger.(äšš…ûÿÿÿÿ
+Q	java:S125!"<This block of commented-out lines of code should be removed.(ýº§æ
+N	java:S106$"9Replace this use of System.out or System.err by a logger.(¾æû
+S	java:S106+"9Replace this use of System.out or System.err by a logger.(ò£ƒþýÿÿÿÿ
+N	java:S1062"9Replace this use of System.out or System.err by a logger.(º½·†
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(ìÚ½Æ
+N	java:S106<"9Replace this use of System.out or System.err by a logger.(ñœ˜‰
+S	java:S106="9Replace this use of System.out or System.err by a logger.(ÉÕà¾øÿÿÿÿ
+C
+java:S1481#"-Remove this unused "employee" local variable.(‚Ü¸å

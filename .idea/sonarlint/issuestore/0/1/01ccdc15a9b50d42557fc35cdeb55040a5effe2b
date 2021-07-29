@@ -1,0 +1,10 @@
+
+Ÿ
+java:S1130"ˆRemove the declaration of thrown exception 'com.fasterxml.jackson.core.JsonParseException' which is a subclass of 'java.io.IOException'.(ó«Á¨
+¥
+java:S1130"ŽRemove the declaration of thrown exception 'com.fasterxml.jackson.databind.JsonMappingException' which is a subclass of 'java.io.IOException'.(ó«Á¨
+W
+java:S1075"ARefactor your code to get this URI from a customizable parameter.(ñ…£Ô
+N	java:S106"9Replace this use of System.out or System.err by a logger.(ÆÇ§Þ
+Q	java:S125"<This block of commented-out lines of code should be removed.(îÃ¹¼
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¿¤¦à

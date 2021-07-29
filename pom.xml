@@ -10,5 +10,6 @@
   	<module>Random</module>
   	<module>ArmyOfBlosch</module>
   	<module>LombokExperiments</module>
+      <module>SpecialBackups</module>
   </modules>
 </project>

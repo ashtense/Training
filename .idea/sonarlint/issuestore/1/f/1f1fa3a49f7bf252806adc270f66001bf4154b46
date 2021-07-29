@@ -1,0 +1,7 @@
+
+‡
+java:S1319"qThe return type of this method should be an interface such as "List" rather than the implementation "LinkedList".(ÜõúÎ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ì±‰‚
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ì±‰‚
+F
+java:S1172"0Remove this unused method parameter "nodeToPop".(û«ÑË
