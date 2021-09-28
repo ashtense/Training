@@ -2,25 +2,35 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Threads" />
-        <module name="ArmyOfBlosch" />
         <module name="Random" />
+        <module name="ArmyOfBlosch" />
+        <module name="SpringRest" />
         <module name="Spring" />
         <module name="SpecialBackups" />
+        <module name="DSAlgoDeepDive" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="ArmyOfBlosch" target="1.5" />
+      <module name="DSAlgoDeepDive" target="8" />
       <module name="LombokExperiments" target="1.5" />
       <module name="Random" target="1.8" />
       <module name="SpecialBackups" target="8" />
       <module name="Spring" target="1.8" />
+      <module name="SpringRest" target="1.8" />
       <module name="Threads" target="1.8" />
       <module name="Training" target="1.5" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="SpringRest" options="-parameters" />
+    </option>
   </component>
 </project>

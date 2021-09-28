@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: SpringRest
+logging:
+  level:
+    ROOT: DEBUG
+
+bucket:
+  file-upload-ashwani:
+    accessKey: AKIAYVC6G4XRUZG34XOQ
+    secretKey: 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
