@@ -1,8 +1,5 @@
 package com.ashwani.sort;
 
-import java.util.Arrays;
-import java.util.stream.Stream;
-
 public class BubbleSort {
 
     public static void main(String[] args) {
@@ -16,10 +13,9 @@ public class BubbleSort {
                 }
             }
         }
-        for (int i = 0; i < arrToSort.length; i++) {
-            System.out.print(arrToSort[i] + ",");
-        }
+        printArray(arrToSort);
     }
+
 
     public static void swapElements(int[] array, int i, int j) {
         if (i == j) {
@@ -28,5 +24,10 @@ public class BubbleSort {
         int temp = array[i];
         array[i] = array[j];
         array[j] = temp;
+    }
+    private static void printArray(int[] arrToSort) {
+        for (int i = 0; i < arrToSort.length; i++) {
+            System.out.print(arrToSort[i] + ",");
+        }
     }
 }
